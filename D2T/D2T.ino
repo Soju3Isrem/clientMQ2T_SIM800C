@@ -17,10 +17,10 @@ const char pass[] = "";
 
 //Credencial 2T
 const char* broker = "m13.cloudmqtt.com";
-const char* userBroker = "ktechiks";
-const char* passwordBroker = "cYyIOKxr4rlf";
-const char* idClient = "GPRS/Josue";
-const int port = 12651;
+const char* userBroker = "---";
+const char* passwordBroker = "---";
+const char* idClient = "-----";
+const int port = 1883;
 
 const char* topicLed = "GPRS/led";
 const char* topicInit = "GPRS/init";
@@ -121,7 +121,7 @@ void loop() {
   if(tm1>(tm+1000)){
     tm=millis();
     SerialUSB.println("Send data");
-    mqtt.publish("GPRS/Cafetal", "hola Mario");
+    mqtt.publish("GPRS/Cafetal", "Msa");
     }
 
 }
